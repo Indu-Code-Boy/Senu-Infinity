@@ -25,6 +25,10 @@ body{
     font-family: HarryP;
     src: url("Fonts/HARRYP__.TTF");
 }
+@font-face {
+    font-family: lemon milk;
+    src: url("LemonMilkBold-gx2B3.otf");
+}
 /*.test{
     color: yellow;
     font-size: 30px;
@@ -59,7 +63,8 @@ body{
     color: rgb(207, 207, 207);
     text-align:center;
     cursor:default;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: lemon milk;
+    font-weight: bold;
     background-color: rgba(90, 90, 90, 0.747);
     padding: 10px 0px 10px 0px;
     opacity: 100%;
@@ -174,7 +179,7 @@ h2{
     font-family:Arial, Helvetica, sans-serif;
     transition: 1.5s;
     animation-name: home-links;
-    animation-duration: 3s;
+    animation-duration: 1s;
 }
 .home-select::selection{
     background-color: yellow;
@@ -187,6 +192,7 @@ h2{
 .home-links:hover{
     text-decoration: underline;
     color: rgb(255, 255, 255);
+    transform: translateX(5px);
 }
 .home-links2nd{
     color: white;
@@ -197,11 +203,11 @@ h2{
     background-color: yellow;
     color: rgb(0, 0, 0);
 }
-.home-links-div{
+/* .home-links-div{
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
-}
+} */
 .home-links-div::selection{
     background-color: yellow;
     color: rgb(0, 0, 0);
@@ -236,7 +242,8 @@ h2{
     color: rgb(0, 0, 0);
 }
 .bots-h3:hover{
-    font-size: 32px;
+    /* font-size: 32px; */
+    transform: translateX(3px);
 }
 .bots-list{
     color: rgb(206, 206, 0);
@@ -253,7 +260,8 @@ h2{
     color: rgb(0, 0, 0);
 }
 .bots-list:hover{
-    font-size: 19px;
+    transform: translateX(5px);
+    /* font-size: 19px; */
     color: yellow;
 }
 li.bots-list:hover{
@@ -290,8 +298,13 @@ font-size: 18px;
     font-size:28px;
     color: orange;
     text-decoration: underline orange;
+    transition: 1.5s;
     animation-name: topic;
     animation-duration: 2s;
+}
+.about-spl:hover{
+    color: rgb(238, 255, 0);
+    text-decoration: underline rgb(238, 255, 0);
 }
 .about-spl::selection{
     background-color: yellow;
@@ -345,6 +358,12 @@ font-size: 18px;
 .home-btn{
     width: 5%;
     cursor:pointer;
+    position:absolute;
+    top: 19px;
+    transition:1s;
+}
+.home-btn:hover{
+    transform: translateY(2px);
 }
 /*.home{
     color: yellow;
@@ -411,9 +430,13 @@ button{
     text-decoration: none;
     border-radius: 30px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    transition: 1s;
+    transition: 0.5s;
     animation-name: nb-btns;
     animation-duration: 2s;
+}
+.nb-btns:active{
+    background-color: rgb(0, 85, 0);
+    color: rgb(81, 255, 0);
 }
 .nb-btns::selection{
     color: black;
@@ -421,8 +444,8 @@ button{
 }
 .nb-btns:hover{
     cursor: pointer;
-    transform: translateX(5px);
-    transform: rotateZ(deg);
+    color: rgb(236, 236, 0);
+    transform:translateX(2px);
 }
 .about-btns{
     color: rgb(0, 255, 0);
@@ -435,6 +458,7 @@ button{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     animation-name: notice-board;
     animation-duration: 2s;
+    animation-delay: 10s;
 }
 .nb-dates::selection{
     color: black;
